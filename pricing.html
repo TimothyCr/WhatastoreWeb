@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - WhataStore</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: transform 0.2s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        .features-list {
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .features-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--primary)"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.0117 21.656C6.68673 21.656 2.3562 17.3255 2.3562 12.0005C2.3562 6.67554 6.68673 2.34502 12.0117 2.34502C17.3367 2.34502 21.6672 6.67554 21.6672 12.0005C21.6672 17.3255 17.3367 21.656 12.0117 21.656ZM12.0117 0C5.3887 0 0 5.3887 0 12.0117C0 14.2827 0.6127 16.4027 1.6767 18.2397L0.5187 22.4277L4.8297 21.2827C6.5447 22.1867 8.4907 22.656 10.5117 22.656H10.5167C17.1397 22.656 22.5287 17.267 22.5287 10.644C22.5287 4.021 17.1397 0 10.5167 0H12.0117Z" />
+                </svg>
+                WhataStore
+            </a>
+            <div class="menu-toggle">☰</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html" class="active">Pricing</a>
+                <a href="terms.html">Terms</a>
+                <a href="index.html#contact" class="cta-button">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-alt">
+            <div class="container text-center">
+                <h1>Simple, Transparent Pricing</h1>
+                <p>Start for free, upgrade as you grow. No hidden fees.</p>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Starter</h3>
+                        <div class="price">Free</div>
+                        <p>Perfect for new businesses just getting started.</p>
+                        <ul class="features-list">
+                            <li>Up to 50 Products</li>
+                            <li>Basic WhatsApp Bot</li>
+                            <li>Manual Order Management</li>
+                            <li>standard Support</li>
+                        </ul>
+                        <a href="#" class="cta-button" style="background: var(--secondary);">Start Free</a>
+                    </div>
+
+                    <div class="pricing-card" style="border-color: var(--primary); transform: scale(1.05);">
+                        <div
+                            style="background: var(--primary); color: white; display: inline-block; padding: 4px 12px; border-radius: 12px; margin-bottom: 20px; font-size: 0.8rem; font-weight: 600;">
+                            RECOMMENDED</div>
+                        <h3>Pro</h3>
+                        <div class="price">$29<span>/month</span></div>
+                        <p>For growing businesses that need power.</p>
+                        <ul class="features-list">
+                            <li>Unlimited Products</li>
+                            <li>Advanced Analytics</li>
+                            <li>Priority Support</li>
+                            <li>Custom Domain (Coming Soon)</li>
+                            <li>Inventory Tracking</li>
+                        </ul>
+                        <a href="#" class="cta-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>WhataStore</h4>
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Empowering merchants in emerging markets to
+                    sell more with less effort.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: support@whatastore.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Address: 123 Tech Hub, Lagos, Nigeria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 WhataStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
