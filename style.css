@@ -145,28 +145,52 @@ p {
 /* Steps Grid */
 .steps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
 }
 
 .step-card {
     text-align: center;
-    padding: 20px;
+    padding: 40px 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);
 }
 
 .step-number {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: var(--primary);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+.step-card h3 {
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+}
+
+.step-card p {
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /* Footer */
